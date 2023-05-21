@@ -123,41 +123,179 @@ void display() {
     glFlush();
 
 
-    ////////////////tree//////
-
-     ///tree upper part
+    ////////////////     tree       //////
+     
+    /////////////  01   //////////
+     ///tree#1 upper part
     glColor3f(0.30, 0.60, 0.00);
     glBegin(GL_POLYGON);
     glVertex2f(0.39, 0.51);
-    glVertex2f(0.35, 0.51);
-    glVertex2f(0.38, 0.55);
-    glVertex2f(0.35, 0.59);
-    glVertex2f(0.39, 0.63);
-    glVertex2f(0.44, 0.59);
-    glVertex2f(0.4, 0.55);
-    glVertex2f(0.44, 0.5);
-  
+    glVertex2f(0.32, 0.51);
+    glVertex2f(0.35, 0.55);
+    glVertex2f(0.33, 0.59);
+    glVertex2f(0.37, 0.6);
+    glVertex2f(0.39, 0.65);
+    glVertex2f(0.41, 0.6);
+    glVertex2f(0.45, 0.59);
+    glVertex2f(0.43, 0.55);
+    glVertex2f(0.46, 0.51);
 
     glEnd();
     glFlush();
+
+    //tree shade
+    glColor3f(0.16, 0.50, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.45, 0.52);
+    glVertex2f(0.4, 0.52);
+    glVertex2f(0.44, 0.53);
+    glVertex2f(0.41, 0.55);
+    glVertex2f(0.43, 0.59);
+    glVertex2f(0.39, 0.6);
+    glVertex2f(0.39, 0.64);
+    glVertex2f(0.4, 0.6);
+    glVertex2f(0.42, 0.59);
+    glVertex2f(0.4, 0.55);
+    glVertex2f(0.43, 0.52);
+
+    glEnd();
+    glFlush();
+
     ///tree stem
     glColor3f(0.50, 0.25, 0.00);
     glBegin(GL_POLYGON);
-    glVertex2f(0.38, 0.4);
+    glVertex2f(0.38, 0.41);
     glVertex2f(0.38, 0.51);
     glVertex2f(0.4, 0.51);
-    glVertex2f(0.4, 0.4);
+    glVertex2f(0.4, 0.41);
 
     glEnd();
     glFlush();
+
+    ///////////////  02  ///////////
+
+        ///tree#2 upper part
+
+    glColor3f(0.30, 0.60, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.76, 0.6);
+    glVertex2f(0.8, 0.78);
+    glVertex2f(0.86, 0.6);
+
+    ///tree shade
+
+    glColor3f(0.16, 0.50, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.84, 0.62);
+    glVertex2f(0.8, 0.76);
+    glVertex2f(0.8, 0.77);
+    glVertex2f(0.85, 0.62);
+
+
+    glEnd();
+    glFlush();
+     ///tree stem
+    glColor3f(0.50, 0.25, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.8, 0.5);
+    glVertex2f(0.8, 0.6);
+    glVertex2f(0.82, 0.6);
+    glVertex2f(0.82, 0.5);
+
+    glEnd();
+    glFlush();
+
+
+    ///////////////  03  ///////////
+
+
+    ////////////Round tree upper part #03//////
+    GLfloat PI = 3.14159269;
+    GLfloat x = .65f; GLfloat y = .65f; GLfloat radius = .09f;
+    int triangleAmount = 40;
+
+    GLfloat twicePi = 2.0f * PI;
+
+    glBegin(GL_TRIANGLE_FAN);
+    glColor3f(0.30, 0.60, 0.00);
+
+    glVertex2f(x, y);
+    for (int i = 0; i <= triangleAmount; i++) {
+        glVertex2f(
+            x + (radius * cos(i * twicePi / triangleAmount)),
+            y + (radius * sin(i * twicePi / triangleAmount))
+        );
+    }
+    glEnd();
+    glFlush();
+
+
+ 
+    ///tree stem
+    glColor3f(0.50, 0.25, 0.00);
+    glBegin(GL_POLYGON);
+  
+    glVertex2f(0.65, 0.6);
+    glVertex2f(0.63, 0.66);
+    glVertex2f(0.66, 0.62);
+    glVertex2f(0.67, 0.66);
+    glVertex2f(0.68, 0.6);
+   
+
+    glEnd();
+    glFlush();
+
+    //stem lower part
+    glColor3f(0.50, 0.25, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.65, 0.5);
+    glVertex2f(0.65, 0.6);
+    glVertex2f(0.68, 0.6);
+    glVertex2f(0.68, 0.5);
+
+    glEnd();
+    glFlush();
+
+
+
+    ///////////////////////   04   ///////////
+
+
+ 
+
+
+      ///tree stem
+    glColor3f(0.50, 0.25, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.92, 0.2);
+    glVertex2f(0.92, 0.35);
+    glVertex2f(0.95, 0.35);
+    glVertex2f(0.95, 0.2);
+
+    glEnd();
+    glFlush();
+
+    //stem left part
+    glColor3f(0.50, 0.25, 0.00);
+    glBegin(GL_POLYGON);
+    glVertex2f(0.92, 0.25);
+    glVertex2f(0.88, 0.3);
+    glVertex2f(0.89, 0.31);
+    glVertex2f(0.92, 0.27);
+
+    glEnd();
+    glFlush();
+ 
+   
+   
 
     ///////////////////////////wood stand ///////
 
     // left side wood stand for heating pot
     glColor3f(0.40, 0.00, 0.07);
     glBegin(GL_POLYGON);
-    glVertex2f(0.4, 0.15);
-    glVertex2f(0.39, 0.19);
+    glVertex2f(0.47, 0.15);
+    glVertex2f(0.46, 0.19);
     glVertex2f(0.62, 0.33);
     glVertex2f(0.64, 0.32);
 
@@ -167,8 +305,8 @@ void display() {
     // right side wood stand for heating pot
     glColor3f(0.40, 0.00, 0.07);
     glBegin(GL_POLYGON);
-    glVertex2f(0.8, 0.15);
-    glVertex2f(0.82, 0.19);
+    glVertex2f(0.76, 0.15);
+    glVertex2f(0.75, 0.19);
     glVertex2f(0.58, 0.33);
     glVertex2f(0.56, 0.32);
 
@@ -243,16 +381,28 @@ void display() {
 
 
 
-/* glColor3f(1.0f, 1.0f, 1.0f);//WHite
-    glBegin(GL_LINE_LOOP);
-    for (int i = 0; i < 360; i++) {
-        float angle = i * 3.14159269 / 90.0f;
-        float x = 0.3f * cos(angle);
-        float y = 0.3f * sin(angle);
-        glVertex2f(x, y);
+/*   //drawing circle
+    GLfloat PI = 3.14159269;
+    GLfloat x = .5f; GLfloat y = .5f; GLfloat radius = .2f;
+    int triangleAmount = 40;
+
+    GLfloat twicePi = 2.0f * PI;
+
+    glBegin(GL_TRIANGLE_FAN);
+    glColor3f(0.00, 0.00, 0.00);
+    glVertex2f(x, y);
+    for(int i = 0; i <= triangleAmount; i++) {
+        glVertex2f(
+            x +(radius *cos(i * twicePi /triangleAmount)),
+            y + (radius *sin( i * twicePi/triangleAmount))
+        );
     }
     glEnd();
     glFlush();*/
+
+  
+    
+
    
 
 
@@ -286,7 +436,7 @@ int main(int argc, char** argv) {
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(950,700 );
+    glutInitWindowSize(1050,750 );
    // glutInitWindowPosition(400, 230);
     glutCreateWindow("Aqsa");
     myInit();

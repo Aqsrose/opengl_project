@@ -107,12 +107,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\SEMESTER WORK\6th Semester\Computer Graphics\freeglut\include;D:\SEMESTER WORK\6th Semester\Computer Graphics\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\SEMESTER WORK\6th Semester\Computer Graphics\opengl\freeglut\include;D:\SEMESTER WORK\6th Semester\Computer Graphics\opengl\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\SEMESTER WORK\6th Semester\Computer Graphics\freeglut\lib;D:\SEMESTER WORK\6th Semester\Computer Graphics\glew-1.11.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\SEMESTER WORK\6th Semester\Computer Graphics\opengl\freeglut\lib;D:\SEMESTER WORK\6th Semester\Computer Graphics\opengl\glew-1.11.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>freeglut.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
