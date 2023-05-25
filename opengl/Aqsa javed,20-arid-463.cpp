@@ -570,7 +570,7 @@ void display() {
     glColor3f(0.50, 0.25, 0.00);
     glBegin(GL_POLYGON);
     glVertex2f(0.95, 0.27);
-    glVertex2f(0.9, 0.28);
+    glVertex2f(0.97     , 0.28);
     glVertex2f(0.99, 0.4);
     glVertex2f(0.98, 0.4);
     glVertex2f(0.97, 0.3);
