@@ -137,6 +137,10 @@
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\SEMESTER WORK\6th Semester\Computer Graphics\opengl\freeglut\include;D:\SEMESTER WORK\6th Semester\Computer Graphics\opengl\glew-1.11.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="declaration.h" />
+    <ClInclude Include="header.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
